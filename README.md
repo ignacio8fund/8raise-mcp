@@ -5,7 +5,7 @@
 8Raise is a hosted MCP server that searches a curated database of VCs, LPs, family offices, and angel investors and returns ready-to-contact leads — names, titles, firms, LinkedIn URLs, and verified emails — without leaving your AI assistant.
 
 - 🌐 **Website:** https://8raise.com
-- 📚 **Docs:** https://8raise.com/dashboard/how-to-use
+- 📚 **Setup guide:** https://8raise.com/connect
 - 🔌 **Server endpoint:** `https://mcp.8raise.com/mcp`
 - 📨 **Support:** support@8raise.com
 

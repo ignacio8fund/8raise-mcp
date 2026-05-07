@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Find investors for your startup or fund. 8Raise searches a curated database of VCs, LPs, family offices, and angel investors and returns ready-to-contact leads — names, titles, firms, LinkedIn URLs, and verified emails — directly inside your AI assistant.",
   "homepage": "https://8raise.com",
-  "documentation": "https://8raise.com/dashboard/how-to-use",
+  "documentation": "https://8raise.com/connect",
   "support": "support@8raise.com",
   "license": "MIT",
   "publisher": {

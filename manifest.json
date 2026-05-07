@@ -1,0 +1,67 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/manifest.json",
+  "name": "8Raise",
+  "version": "1.0.0",
+  "description": "Find investors for your startup or fund. 8Raise searches a curated database of VCs, LPs, family offices, and angel investors and returns ready-to-contact leads — names, titles, firms, LinkedIn URLs, and verified emails — directly inside your AI assistant.",
+  "homepage": "https://8raise.com",
+  "documentation": "https://8raise.com/dashboard/how-to-use",
+  "support": "support@8raise.com",
+  "license": "MIT",
+  "publisher": {
+    "name": "8Raise",
+    "url": "https://8raise.com"
+  },
+  "server": {
+    "type": "remote",
+    "url": "https://mcp.8raise.com/mcp",
+    "transport": "streamable-http"
+  },
+  "auth": {
+    "type": "oauth2",
+    "flow": "authorization_code_pkce",
+    "discovery_url": "https://mcp.8raise.com/.well-known/oauth-authorization-server",
+    "scopes": [
+      "openid",
+      "profile",
+      "offline_access"
+    ]
+  },
+  "categories": [
+    "business",
+    "lead-generation",
+    "venture-capital",
+    "fundraising"
+  ],
+  "tags": [
+    "investors",
+    "vc",
+    "lp",
+    "fundraising",
+    "leads",
+    "outreach"
+  ],
+  "tools": [
+    "get_started",
+    "refine_query",
+    "search_investors",
+    "check_search_status",
+    "export_results",
+    "save_lead",
+    "unsave_lead",
+    "list_saved_leads",
+    "tag_lead",
+    "save_search",
+    "list_saved_searches",
+    "rerun_search",
+    "delete_saved_search",
+    "upload_exclusion_list",
+    "import_linkedin_connections",
+    "list_outreach_destinations",
+    "send_to_heyreach",
+    "get_usage",
+    "get_billing_info",
+    "manage_subscription"
+  ],
+  "privacy_policy": "https://8raise.com/privacy",
+  "terms_of_service": "https://8raise.com/terms"
+}

@@ -1,0 +1,22 @@
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local env (defensive — should not exist in this stub repo, but never commit if it does)
+.env
+.env.local
+.env.*.local
+
+# Node (defensive — same reason)
+node_modules/
+package-lock.json
+yarn.lock

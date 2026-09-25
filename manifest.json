@@ -1,11 +1,11 @@
 {
   "$schema": "https://modelcontextprotocol.io/schemas/manifest.json",
   "name": "8Raise",
-  "version": "1.0.0",
-  "description": "Find investors for your startup or fund. 8Raise searches a curated database of VCs, LPs, family offices, and angel investors and returns ready-to-contact leads — names, titles, firms, LinkedIn URLs, and verified emails — directly inside your AI assistant.",
+  "version": "1.1.0",
+  "description": "Find investors for your startup, fund or real estate deal. 8Raise searches our own investor database of VCs, LPs, family offices, angels and US wealth advisers and returns ready-to-contact investors (names, titles, firms, LinkedIn profiles, emails and fund data) directly inside your AI assistant. Also: enrich a firm list, Lookalike investors and Firm Finder.",
   "homepage": "https://8raise.com",
   "documentation": "https://8raise.com/connect",
-  "support": "support@8raise.com",
+  "support": "hi@8raise.com",
   "license": "MIT",
   "publisher": {
     "name": "8Raise",
@@ -23,7 +23,8 @@
     "scopes": [
       "openid",
       "profile",
-      "offline_access"
+      "email",
+      "mcp"
     ]
   },
   "categories": [
@@ -36,6 +37,9 @@
     "investors",
     "vc",
     "lp",
+    "family-offices",
+    "ria",
+    "real-estate",
     "fundraising",
     "leads",
     "outreach"
@@ -45,22 +49,30 @@
     "refine_query",
     "search_investors",
     "check_search_status",
+    "list_advanced_options",
+    "enrich_companies",
+    "check_enrichment_status",
+    "discover_investors",
+    "find_firms",
+    "check_discovery_status",
+    "approve_discovery",
+    "search_tips",
+    "upload_exclusion_list",
     "export_results",
+    "import_linkedin_connections",
+    "get_usage",
+    "manage_subscription",
+    "get_billing_info",
     "save_lead",
-    "unsave_lead",
     "list_saved_leads",
+    "unsave_lead",
     "tag_lead",
     "save_search",
     "list_saved_searches",
     "rerun_search",
     "delete_saved_search",
-    "upload_exclusion_list",
-    "import_linkedin_connections",
     "list_outreach_destinations",
-    "send_to_heyreach",
-    "get_usage",
-    "get_billing_info",
-    "manage_subscription"
+    "send_to_heyreach"
   ],
   "privacy_policy": "https://8raise.com/privacy",
   "terms_of_service": "https://8raise.com/terms"

@@ -36,7 +36,7 @@ Four ways to find investors:
 - **Lookalike:** investors who backed companies like yours.
 - **Firm Finder:** describe the firms you want (for example "multi-family offices in Brazil that invest pre-IPO") and get a firm list to review.
 
-Each investor comes with name, title, firm, LinkedIn profile, email (about 65-75% hit rate; any address we cannot fully confirm is marked unverified), phone where available, fund data and a relevance score. Tiers 1.5 and 2 add research: recent deals, news, talks, a fit summary and an opener, and at tier 2 the firm's thesis and recent deals.
+Each investor comes with name, title, firm, LinkedIn profile, email (about 65-75% hit rate; we never guess an address, and any we cannot confirm is left out), phone where available, fund data and a relevance score. Tiers 1.5 and 2 add research: recent deals, news, talks, a fit summary and an opener, and at tier 2 the firm's thesis and recent deals.
 
 Results show in chat (top 3), on your dashboard (the full list), and as a CSV or Excel export. You can push them to HeyReach for LinkedIn outreach.
 

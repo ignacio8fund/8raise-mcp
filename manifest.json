@@ -49,6 +49,7 @@
     "refine_query",
     "search_investors",
     "check_search_status",
+    "cancel_search",
     "list_advanced_options",
     "enrich_companies",
     "check_enrichment_status",

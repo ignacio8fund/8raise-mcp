@@ -77,11 +77,11 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 
 ## Tools
 
-28 tools become available to your assistant:
+29 tools become available to your assistant:
 
 **Search**
 - `get_started` (welcome, plan and credits), `search_tips` (how to get the best results)
-- `refine_query` (turns your request into a search), `search_investors` (runs it), `check_search_status` (polls a long search)
+- `refine_query` (turns your request into a search), `search_investors` (runs it), `check_search_status` (polls a long search), `cancel_search` (stops a running search before it is charged)
 - `list_advanced_options` (Advanced, LP and RIA filter menus)
 - `export_results` (CSV or Excel)
 
@@ -117,10 +117,10 @@ You pay in credits, per new investor delivered:
 | Plan | Credits / month | Per-search max | Price |
 |---|---|---|---|
 | Free trial | 10 | 10 | $0 |
-| Solo | 150 | 50 | $59 / mo |
-| Starter | 500 | 100 | $179 / mo |
-| Growth | 1,500 | 300 | $529 / mo |
-| Pro | 3,000 | 1,000 | $1,059 / mo |
+| Solo | 165 | 50 | $59 / mo |
+| Starter | 550 | 100 | $179 / mo |
+| Growth | 1,650 | 300 | $529 / mo |
+| Pro | 3,300 | 1,000 | $1,059 / mo |
 
 Every plan has every feature; only Pro removes the export watermark. Quarterly billing saves 10% and annual saves 20%. Full pricing: https://8raise.com/#pricing. Change or cancel your plan on the dashboard.
 

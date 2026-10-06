@@ -77,7 +77,7 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 
 ## Tools
 
-29 tools become available to your assistant:
+31 tools become available to your assistant:
 
 **Search**
 - `get_started` (welcome, plan and credits), `search_tips` (how to get the best results)
@@ -86,8 +86,8 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 - `export_results` (CSV or Excel)
 
 **Enrich a list, Lookalike and Firm Finder**
-- `enrich_companies`, `check_enrichment_status`
-- `discover_investors` (Lookalike), `find_firms` (Firm Finder), `check_discovery_status`, `approve_discovery`
+- `enrich_companies`, `check_enrichment_status`, `cancel_enrichment` (stops a running job; delivered contacts stay)
+- `discover_investors` (Lookalike), `find_firms` (Firm Finder), `check_discovery_status`, `approve_discovery`, `cancel_discovery` (stops a run before its firm list is delivered and charged)
 
 **Saved leads and searches**
 - `save_lead`, `unsave_lead`, `list_saved_leads`, `tag_lead`

@@ -1,8 +1,8 @@
 {
   "$schema": "https://modelcontextprotocol.io/schemas/manifest.json",
   "name": "8Raise",
-  "version": "1.2.0",
-  "description": "Find investors for your startup, fund or real estate deal. 8Raise searches our own investor database of VCs, LPs, family offices, angels and US wealth advisers and returns ready-to-contact investors (names, titles, firms, LinkedIn profiles, emails and fund data) directly inside your AI assistant. Also: enrich a firm list, Lookalike investors, Firm Finder, suggested searches for a client campaign and HeyReach campaign drafts.",
+  "version": "1.3.0",
+  "description": "Find investors for your startup, fund or real estate deal. 8Raise searches our own investor database of VCs, LPs, family offices, angels and US wealth advisers and returns ready-to-contact investors (names, titles, firms, LinkedIn profiles, emails and fund data) directly inside your AI assistant. Also: enrich a firm list, Lookalike investors, Firm Finder, suggested searches for a client campaign, HeyReach campaign drafts, and a report of how your HeyReach outreach is going.",
   "homepage": "https://8raise.com",
   "documentation": "https://8raise.com/connect",
   "support": "hi@8raise.com",
@@ -78,7 +78,9 @@
     "send_to_heyreach",
     "suggest_searches",
     "continue_search",
-    "create_heyreach_campaign"
+    "create_heyreach_campaign",
+    "get_outreach_report",
+    "get_outreach_replies"
   ],
   "privacy_policy": "https://8raise.com/privacy",
   "terms_of_service": "https://8raise.com/terms"

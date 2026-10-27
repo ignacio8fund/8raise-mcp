@@ -55,6 +55,7 @@ Ask for searches the way a fundraising team plans a client campaign:
 
 - **Suggest searches:** describe the company or fund and the raise, and 8Raise suggests 2 to 4 searches (for example the core VCs for the round, then angels, corporate VCs or family offices). Some suggestions are firm lists, for firm types the filters cannot pin down, like single family offices. Each suggestion is a card you confirm first.
 - **Find more like these:** more investors like the ones who replied to your HeyReach campaigns (the replies HeyReach tagged interested), the ones you marked in your pipeline, saved leads with a tag, a past search, or names you give. New people only.
+- **See how your outreach is going:** ask "how is my outreach going?" and 8Raise reads your own HeyReach: who replied, who HeyReach tagged interested, which investor types and countries reply best, and what they said. It never sends a message; a new campaign from your best one is always a draft.
 
 ## Install
 
@@ -87,11 +88,13 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
  raising a 2 million pound seed. 100 investors in total."
 
 "Find more investors like the ones who replied to my HeyReach campaigns."
+
+"How is my HeyReach outreach going? Who is waiting for my answer?"
 ```
 
 ## Tools
 
-34 tools become available to your assistant:
+36 tools become available to your assistant:
 
 **Search**
 - `get_started` (welcome, plan and credits), `search_tips` (how to get the best results)
@@ -110,6 +113,7 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 
 **Outreach (HeyReach)**
 - `list_outreach_destinations`, `send_to_heyreach`, `create_heyreach_campaign` (a campaign from your delivered investors, always a draft until you say start)
+- `get_outreach_report` (how your HeyReach campaigns are going: replies and interested per campaign, and the investor types and countries that reply best), `get_outreach_replies` (the conversations, for example the ones waiting on your answer)
 
 **Exclusions**
 - `upload_exclusion_list` (people or firms to skip), `import_linkedin_connections` (skip your LinkedIn network). Both apply to the workspace that is active on your dashboard.

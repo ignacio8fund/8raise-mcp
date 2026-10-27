@@ -38,7 +38,7 @@ Four ways to find investors:
 
 Each investor comes with name, title, firm, LinkedIn profile, email (about 65-75% hit rate; we never guess an address, and any we cannot confirm is left out), phone where available, fund data and a relevance score. Tiers 1.5 and 2 add research: recent deals, news, talks, a fit summary and an opener, and at tier 2 the firm's thesis and recent deals.
 
-Results show in chat (top 3), on your dashboard (the full list), and as a CSV or Excel export. You can push them to HeyReach for LinkedIn outreach.
+Results show in chat (top 3), on your dashboard (the full list), and as a CSV or Excel export. You can push them to HeyReach for LinkedIn outreach, or have a HeyReach campaign built from them as a draft you review.
 
 ## How it works in chat
 
@@ -46,6 +46,15 @@ Results show in chat (top 3), on your dashboard (the full list), and as a CSV or
 2. 8Raise shows the search it will run. Nothing runs until you say go.
 3. You pick the delivery tier (1, 1.5 or 2 credits per investor).
 4. It runs. Big searches run in the background and are checked every 30 seconds.
+
+A search of 50 investors or more offers a 10 investor test run first. When the test looks right, the rest is shown as a new card, with new people only.
+
+## Plan a campaign
+
+Ask for searches the way a fundraising team plans a client campaign:
+
+- **Suggest searches:** describe the company or fund and the raise, and 8Raise suggests 2 to 4 searches (for example the core VCs for the round, then angels, corporate VCs or family offices). Some suggestions are firm lists, for firm types the filters cannot pin down, like single family offices. Each suggestion is a card you confirm first.
+- **Find more like these:** more investors like the ones who replied to your HeyReach campaigns (the replies HeyReach tagged interested), the ones you marked in your pipeline, saved leads with a tag, a past search, or names you give. New people only.
 
 ## Install
 
@@ -73,17 +82,23 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 "Here are 30 firm names: find the partners and their emails."
 
 "Find investors who backed companies like ours: an AI code-review tool raising a seed round."
+
+"Suggest searches for my client: UK software for small business payments,
+ raising a 2 million pound seed. 100 investors in total."
+
+"Find more investors like the ones who replied to my HeyReach campaigns."
 ```
 
 ## Tools
 
-31 tools become available to your assistant:
+34 tools become available to your assistant:
 
 **Search**
 - `get_started` (welcome, plan and credits), `search_tips` (how to get the best results)
 - `refine_query` (turns your request into a search), `search_investors` (runs it), `check_search_status` (polls a long search), `cancel_search` (stops a running search before it is charged)
 - `list_advanced_options` (Advanced, LP and RIA filter menus)
 - `export_results` (CSV or Excel)
+- `suggest_searches` (2 to 4 searches planned for a client or a raise, or more like the investors who replied; each one a card to confirm), `continue_search` (the rest of a test run, or more of any search, new people only)
 
 **Enrich a list, Lookalike and Firm Finder**
 - `enrich_companies`, `check_enrichment_status`, `cancel_enrichment` (stops a running job; delivered contacts stay)
@@ -94,7 +109,7 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 - `save_search`, `list_saved_searches`, `rerun_search`, `delete_saved_search`
 
 **Outreach (HeyReach)**
-- `list_outreach_destinations`, `send_to_heyreach`
+- `list_outreach_destinations`, `send_to_heyreach`, `create_heyreach_campaign` (a campaign from your delivered investors, always a draft until you say start)
 
 **Exclusions**
 - `upload_exclusion_list` (people or firms to skip), `import_linkedin_connections` (skip your LinkedIn network). Both apply to the workspace that is active on your dashboard.
@@ -102,7 +117,7 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 **Account**
 - `get_usage` (credits left), `get_billing_info` (plans and prices), `manage_subscription` (your plan; for upgrades and cancelling it gives you the dashboard link)
 
-Schedules, memory and HeyReach campaign building live in the 8Raise Agent on the dashboard, not in the connector.
+Schedules and memory live in the 8Raise Agent on the dashboard, not in the connector.
 
 ## Credits and plans
 

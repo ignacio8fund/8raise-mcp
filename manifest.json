@@ -1,8 +1,8 @@
 {
   "$schema": "https://modelcontextprotocol.io/schemas/manifest.json",
   "name": "8Raise",
-  "version": "1.4.0",
-  "description": "Find investors for your startup, fund or real estate deal. 8Raise searches our own investor database of VCs, LPs, family offices, angels and US wealth advisers and returns ready-to-contact investors (names, titles, firms, LinkedIn profiles, emails and fund data) directly inside your AI assistant. Also: enrich a firm list, Lookalike investors, Firm Finder, suggested searches for a client campaign, HeyReach (LinkedIn) and Instantly (email) campaign drafts, and a report of how your outreach is going.",
+  "version": "1.5.0",
+  "description": "Find investors for your startup, fund or real estate deal. 8Raise searches our own investor database of VCs, LPs, family offices, angels and US wealth advisers and returns ready-to-contact investors (names, titles, firms, LinkedIn profiles, emails and fund data) directly inside your AI assistant. Also: enrich a firm list, Lookalike investors, Firm Finder, suggested searches for a client campaign, HeyReach (LinkedIn) and Instantly (email) campaign drafts, your raise pipeline in HubSpot, and a report of how your outreach is going.",
   "homepage": "https://8raise.com",
   "documentation": "https://8raise.com/connect",
   "support": "hi@8raise.com",
@@ -42,7 +42,8 @@
     "real-estate",
     "fundraising",
     "leads",
-    "outreach"
+    "outreach",
+    "crm"
   ],
   "tools": [
     "get_started",
@@ -82,7 +83,10 @@
     "get_outreach_report",
     "get_outreach_replies",
     "send_to_instantly",
-    "create_instantly_campaign"
+    "create_instantly_campaign",
+    "send_to_hubspot",
+    "create_hubspot_pipeline",
+    "sync_hubspot"
   ],
   "privacy_policy": "https://8raise.com/privacy",
   "terms_of_service": "https://8raise.com/terms"

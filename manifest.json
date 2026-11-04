@@ -86,7 +86,8 @@
     "create_instantly_campaign",
     "send_to_hubspot",
     "create_hubspot_pipeline",
-    "sync_hubspot"
+    "sync_hubspot",
+    "set_pipeline_status"
   ],
   "privacy_policy": "https://8raise.com/privacy",
   "terms_of_service": "https://8raise.com/terms"

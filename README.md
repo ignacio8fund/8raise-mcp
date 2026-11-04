@@ -99,7 +99,7 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 
 ## Tools
 
-41 tools become available to your assistant:
+42 tools become available to your assistant:
 
 **Search**
 - `get_started` (welcome, plan and credits), `search_tips` (how to get the best results)
@@ -119,7 +119,8 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 **Outreach (HeyReach for LinkedIn, Instantly for email, HubSpot for your CRM)**
 - `list_outreach_destinations` (your campaigns and lists in HeyReach or Instantly, or your HubSpot deal pipelines and lists), `send_to_heyreach`, `create_heyreach_campaign` (a campaign from your delivered investors, always a draft until you say start)
 - `send_to_instantly` (investors with an email we can use go to an Instantly campaign, an existing list or a new list; the ones without one are named), `create_instantly_campaign` (an email campaign with your emails, the time zone and hours of the people it reaches; always a draft until you say start)
-- `send_to_hubspot` (firms go to HubSpot as companies and investors as contacts, with one deal per firm in your raise pipeline and, if you name a campaign, a HubSpot list; no doubles), `create_hubspot_pipeline` (the raise pipeline with its stages, or check one you have), `sync_hubspot` (moves each firm's deal to match the marks you set in 8Raise; it also runs on its own every 10 minutes)
+- `send_to_hubspot` (firms go to HubSpot as companies and investors as contacts, with one deal per firm in your raise pipeline and, if you name a campaign, a HubSpot list; no doubles), `create_hubspot_pipeline` (the raise pipeline with our stages or your own, or check one you have), `sync_hubspot` (moves each firm's deal to match the marks you set in 8Raise and your HeyReach outreach: a LinkedIn request or message is Contacted, a reply is Replied, and each LinkedIn message is logged on the contact and the deal; it also runs on its own every 10 minutes)
+- `set_pipeline_status` (where investors are: contacted, replied, meeting, passed or invested; HubSpot deals follow)
 - `get_outreach_report` (how your campaigns are going: replies and interested per campaign, and the investor types and countries that reply best), `get_outreach_replies` (the conversations, for example the ones waiting on your answer). Both read HeyReach or Instantly.
 
 **Exclusions**

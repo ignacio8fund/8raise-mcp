@@ -38,7 +38,7 @@ Four ways to find investors:
 
 Each investor comes with name, title, firm, LinkedIn profile, email (about 65-75% hit rate; we never guess an address, and any we cannot confirm is left out), phone where available, fund data and a relevance score. Tiers 1.5 and 2 add research: recent deals, news, talks, a fit summary and an opener, and at tier 2 the firm's thesis and recent deals.
 
-Results show in chat (top 3), on your dashboard (the full list), and as a CSV or Excel export. You can push them to HeyReach for LinkedIn outreach or to Instantly for email outreach (only people with an email we can use), or have a campaign built from them as a draft you review.
+Results show in chat (top 3), on your dashboard (the full list), and as a CSV or Excel export. You can push them to HeyReach for LinkedIn outreach or to Instantly for email outreach (only people with an email we can use), send them to your own HubSpot (firms as companies, investors as contacts, one deal per firm in your raise pipeline), or have a campaign built from them as a draft you review.
 
 ## How it works in chat
 
@@ -55,6 +55,7 @@ Ask for searches the way a fundraising team plans a client campaign:
 
 - **Suggest searches:** describe the company or fund and the raise, and 8Raise suggests 2 to 4 searches (for example the core VCs for the round, then angels, corporate VCs or family offices). Some suggestions are firm lists, for firm types the filters cannot pin down, like single family offices. Each suggestion is a card you confirm first.
 - **Find more like these:** more investors like the ones who replied to your HeyReach or Instantly campaigns (the replies your tool marked interested), the ones you marked in your pipeline, saved leads with a tag, a past search, or names you give. New people only.
+- **Your raise pipeline in HubSpot:** connect your HubSpot once (a HubSpot service key, on the Outreach page of your dashboard, for one workspace or all of them) and say "send these investors to HubSpot". 8Raise makes the pipeline with its stages, adds the firms, the investors and one deal per firm with no doubles, and moves each deal forward when you mark an investor in 8Raise. A workspace with its own key only ever sends to its own HubSpot, so each client of a fundraising team stays apart.
 - **See how your outreach is going:** ask "how is my outreach going?" and 8Raise reads your own HeyReach (LinkedIn) or Instantly (email): who replied, who your tool marked interested, which investor types and countries reply best, and what they said. It never sends a message or an email; a new campaign from your best one is always a draft.
 
 ## Install
@@ -92,11 +93,13 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 "How is my HeyReach outreach going? Who is waiting for my answer?"
 
 "Send the ones with an email to my Instantly campaign."
+
+"Send these investors to my HubSpot pipeline, in a list called Seed VCs."
 ```
 
 ## Tools
 
-38 tools become available to your assistant:
+42 tools become available to your assistant:
 
 **Search**
 - `get_started` (welcome, plan and credits), `search_tips` (how to get the best results)
@@ -113,9 +116,11 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 - `save_lead`, `unsave_lead`, `list_saved_leads`, `tag_lead`
 - `save_search`, `list_saved_searches`, `rerun_search`, `delete_saved_search`
 
-**Outreach (HeyReach for LinkedIn, Instantly for email)**
-- `list_outreach_destinations` (your campaigns and lists in either tool), `send_to_heyreach`, `create_heyreach_campaign` (a campaign from your delivered investors, always a draft until you say start)
+**Outreach (HeyReach for LinkedIn, Instantly for email, HubSpot for your CRM)**
+- `list_outreach_destinations` (your campaigns and lists in HeyReach or Instantly, or your HubSpot deal pipelines and lists), `send_to_heyreach`, `create_heyreach_campaign` (a campaign from your delivered investors, always a draft until you say start)
 - `send_to_instantly` (investors with an email we can use go to an Instantly campaign, an existing list or a new list; the ones without one are named), `create_instantly_campaign` (an email campaign with your emails, the time zone and hours of the people it reaches; always a draft until you say start)
+- `send_to_hubspot` (firms go to HubSpot as companies and investors as contacts, with one deal per firm in your raise pipeline and, if you name a campaign, a HubSpot list; no doubles), `create_hubspot_pipeline` (the raise pipeline with our stages or your own, or check one you have), `sync_hubspot` (moves each firm's deal to match the marks you set in 8Raise and your HeyReach outreach: a LinkedIn request or message is Contacted, a reply is Replied, and each LinkedIn message is logged on the contact and the deal; it also runs on its own every 10 minutes)
+- `set_pipeline_status` (where investors are: contacted, replied, meeting, passed or invested; HubSpot deals follow)
 - `get_outreach_report` (how your campaigns are going: replies and interested per campaign, and the investor types and countries that reply best), `get_outreach_replies` (the conversations, for example the ones waiting on your answer). Both read HeyReach or Instantly.
 
 **Exclusions**

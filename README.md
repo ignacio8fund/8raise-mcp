@@ -99,7 +99,7 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 
 ## Tools
 
-42 tools become available to your assistant:
+49 tools become available to your assistant:
 
 **Search**
 - `get_started` (welcome, plan and credits), `search_tips` (how to get the best results)
@@ -111,6 +111,12 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 **Enrich a list, Lookalike and Firm Finder**
 - `enrich_companies`, `check_enrichment_status`, `cancel_enrichment` (stops a running job; delivered contacts stay)
 - `discover_investors` (Lookalike), `find_firms` (Firm Finder), `check_discovery_status`, `approve_discovery`, `cancel_discovery` (stops a run before its firm list is delivered and charged)
+
+**Warm investors (the investors you already know)**
+- `warm_investors_start` (starts a list for your raise and reads your LinkedIn data file: who in your network is an investor, of which type, and how well you know each one; not charged), `warm_investors_status` (where a list is, what each step found, and what the next step costs)
+- `warm_investors_run` (the next step: the fit check against your raise, 1 credit for every 20 people; research on the people who fit, with a grade and a custom line, 1 credit a person we find research for; messages for each group, not charged; emails, 0.5 credit for each email found; a paid step first shows you the price and waits for your yes)
+- `warm_investors_people` (the people on a list, best first, with the fit check and the grade), `warm_investors_save_message` (your own wording for a message), `warm_investors_export` (the final list as CSV)
+- `warm_investors_campaign` (the final list as a draft campaign in HeyReach or Instantly, each person with their own message; nothing is sent until you press Start)
 
 **Saved leads and searches**
 - `save_lead`, `unsave_lead`, `list_saved_leads`, `tag_lead`
@@ -155,6 +161,8 @@ Every plan has every feature; only Pro removes the export watermark. Quarterly b
 
 - **Sign-in:** OAuth 2.1 with PKCE
 - **What we store:** your account, search history, saved leads and searches, exclusion lists, credit usage. Saved leads, saved searches and exclusion lists belong to your account only.
+- **Warm investors:** the investors found in the LinkedIn file you upload, with the last message from each side for those investors only. We never keep your full chats. Only your team sees the list.
+- **Investor replies:** when HeyReach or Instantly is connected, we note how investors answer your campaigns (yes or no, and what they say they invest in) to keep investor details right. The words of those chats stay private to your account. You can turn this off on the Integrations page, and turning it off deletes what we kept.
 - **What we do not store:** your chats with the AI assistant
 - **Privacy policy:** https://8raise.com/privacy
 - **Terms:** https://8raise.com/terms

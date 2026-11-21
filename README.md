@@ -150,12 +150,12 @@ You pay in credits, per new investor delivered:
 | Plan | Credits / month | Per-search max | Price |
 |---|---|---|---|
 | Free trial | 10 | 10 | $0 |
-| Solo | 165 | 50 | $59 / mo |
+| Solo | 275 | 50 | $99 / mo |
 | Starter | 550 | 100 | $179 / mo |
 | Growth | 1,650 | 300 | $529 / mo |
 | Pro | 3,300 | 1,000 | $1,059 / mo |
 
-Every plan has every feature; only Pro removes the export watermark. Quarterly billing saves 10% and annual saves 20%. Full pricing: https://8raise.com/#pricing. Change or cancel your plan on the dashboard.
+Every plan has every feature; only Pro removes the export watermark. Quarterly billing saves 10% and annual saves 20%. Solo customers who joined before 21 Nov 2026 keep $59 with 165 credits. Full pricing: https://8raise.com/#pricing. Change or cancel your plan on the dashboard.
 
 ## Privacy and data
 

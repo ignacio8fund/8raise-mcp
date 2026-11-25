@@ -64,6 +64,7 @@
     "search_tips",
     "upload_exclusion_list",
     "mark_not_a_fit",
+    "mark_good_fit",
     "export_results",
     "import_linkedin_connections",
     "get_usage",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://modelcontextprotocol.io/schemas/manifest.json",
   "name": "8Raise",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Find investors for your startup, fund or real estate deal. 8Raise searches our own investor database of VCs, LPs, family offices, angels and US wealth advisers and returns ready-to-contact investors (names, titles, firms, LinkedIn profiles, emails and fund data) directly inside your AI assistant. Also: Warm investors (the investors you already know on LinkedIn, checked against your raise), enrich a firm list, Lookalike investors, Firm Finder, suggested searches for a client campaign, HeyReach (LinkedIn) and Instantly (email) campaign drafts, your raise pipeline in HubSpot, and a report of how your outreach is going.",
   "homepage": "https://8raise.com",
   "documentation": "https://8raise.com/connect",
@@ -66,6 +66,9 @@
     "mark_not_a_fit",
     "mark_good_fit",
     "export_results",
+    "show_results",
+    "show_plan",
+    "plan_card_click",
     "import_linkedin_connections",
     "get_usage",
     "manage_subscription",

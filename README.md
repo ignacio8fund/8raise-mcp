@@ -103,13 +103,15 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 
 ## Tools
 
-52 tools become available to your assistant:
+55 tools become available to your assistant:
 
 **Search**
 - `get_started` (welcome, plan and credits), `search_tips` (how to get the best results)
 - `refine_query` (turns your request into a search), `search_investors` (runs it), `check_search_status` (polls a long search), `cancel_search` (stops a running search before it is charged)
 - `list_advanced_options` (Advanced, LP and RIA filter menus)
 - `export_results` (CSV or Excel)
+- `show_results` (shows a finished list as a table inside the chat, in apps that draw pages; other apps get the first rows and the dashboard link)
+- `show_plan` (shows the plan of a search or a run as a card inside the chat before anything is charged, with its price and a Run button, in apps that draw pages; other apps get the plan as a few short lines), `plan_card_click` (used by the card itself when you press Run, not by the assistant)
 - `suggest_searches` (2 to 4 searches planned for a client or a raise, or more like the investors who replied; each one a card to confirm), `continue_search` (the rest of a test run, or more of any search, new people only)
 
 **Enrich a list, Lookalike and Firm Finder**

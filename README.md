@@ -85,10 +85,14 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 
 "Find investors who backed companies like ours: an AI code-review tool raising a seed round."
 
+"Who invested in Monzo? Then find me the partners at the firms I pick."
+
 "Suggest searches for my client: UK software for small business payments,
  raising a 2 million pound seed. 100 investors in total."
 
 "Find more investors like the ones who replied to my HeyReach campaigns."
+
+"The third and fifth investors are not a fit: they only do growth rounds."
 
 "How is my HeyReach outreach going? Who is waiting for my answer?"
 
@@ -99,7 +103,7 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 
 ## Tools
 
-49 tools become available to your assistant:
+51 tools become available to your assistant:
 
 **Search**
 - `get_started` (welcome, plan and credits), `search_tips` (how to get the best results)
@@ -111,6 +115,7 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 **Enrich a list, Lookalike and Firm Finder**
 - `enrich_companies`, `check_enrichment_status`, `cancel_enrichment` (stops a running job; delivered contacts stay)
 - `discover_investors` (Lookalike), `find_firms` (Firm Finder), `check_discovery_status`, `approve_discovery`, `cancel_discovery` (stops a run before its firm list is delivered and charged)
+- `find_company_investors` (who invested in a company you name: a firm list for review, with the round each firm joined; only firms found to have invested are listed, then you pick the firms to get contacts at)
 
 **Warm investors (the investors you already know)**
 - `warm_investors_start` (starts a list for your raise and reads your LinkedIn data file: who in your network is an investor, of which type, and how well you know each one; not charged), `warm_investors_status` (where a list is, what each step found, and what the next step costs)
@@ -131,6 +136,7 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 
 **Exclusions**
 - `upload_exclusion_list` (people or firms to skip), `import_linkedin_connections` (skip your LinkedIn network). Both apply to the workspace that is active on your dashboard.
+- `mark_not_a_fit` (mark delivered investors as not a fit, with your reason; they do not come back in that workspace's searches, a reason that names a kind of investor, such as "only growth rounds", becomes a rule your next searches follow, and every mark can be undone)
 
 **Account**
 - `get_usage` (credits left), `get_billing_info` (plans and prices), `manage_subscription` (your plan; for upgrades and cancelling it gives you the dashboard link)

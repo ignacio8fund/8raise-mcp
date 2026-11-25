@@ -103,7 +103,7 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 
 ## Tools
 
-51 tools become available to your assistant:
+52 tools become available to your assistant:
 
 **Search**
 - `get_started` (welcome, plan and credits), `search_tips` (how to get the best results)
@@ -113,7 +113,7 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 - `suggest_searches` (2 to 4 searches planned for a client or a raise, or more like the investors who replied; each one a card to confirm), `continue_search` (the rest of a test run, or more of any search, new people only)
 
 **Enrich a list, Lookalike and Firm Finder**
-- `enrich_companies`, `check_enrichment_status`, `cancel_enrichment` (stops a running job; delivered contacts stay)
+- `enrich_companies` (the right contacts at firms you name; or name the people you want, each with their firm, and only they are looked up and delivered, with the ones we could not find named), `check_enrichment_status`, `cancel_enrichment` (stops a running job; delivered contacts stay)
 - `discover_investors` (Lookalike), `find_firms` (Firm Finder), `check_discovery_status`, `approve_discovery`, `cancel_discovery` (stops a run before its firm list is delivered and charged)
 - `find_company_investors` (who invested in a company you name: a firm list for review, with the round each firm joined; only firms found to have invested are listed, then you pick the firms to get contacts at)
 
@@ -134,9 +134,10 @@ Any client that supports the [Model Context Protocol](https://modelcontextprotoc
 - `set_pipeline_status` (where investors are: contacted, replied, meeting, passed or invested; HubSpot deals follow)
 - `get_outreach_report` (how your campaigns are going: replies and interested per campaign, and the investor types and countries that reply best), `get_outreach_replies` (the conversations, for example the ones waiting on your answer). Both read HeyReach or Instantly.
 
-**Exclusions**
+**Exclusions and marks**
 - `upload_exclusion_list` (people or firms to skip), `import_linkedin_connections` (skip your LinkedIn network). Both apply to the workspace that is active on your dashboard.
 - `mark_not_a_fit` (mark delivered investors as not a fit, with your reason; they do not come back in that workspace's searches, a reason that names a kind of investor, such as "only growth rounds", becomes a rule your next searches follow, and every mark can be undone)
+- `mark_good_fit` (mark delivered investors as a good fit, with what you like about them; nobody is taken out, what you like, such as "small funds that lead seed rounds", is saved and your next searches pick investors like that first, and every mark can be undone)
 
 **Account**
 - `get_usage` (credits left), `get_billing_info` (plans and prices), `manage_subscription` (your plan; for upgrades and cancelling it gives you the dashboard link)
